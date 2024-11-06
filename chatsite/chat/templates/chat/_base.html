@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Chat com Django</title>
+    <link rel="stylesheet" href="{% static 'chat/css/_base.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Meu Chat com Django</h1>
+        <img src="{% static 'chat/img/user.png' %}" alt="Logotipo do usuário">
+    </header>
+    <nav>
+        <a href="/">Início</a>
+        <a href="/about">Sobre</a>
+        <a href="/contact">Contato</a>
+        <a href="/policies">Politícas</a>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 XYZ.</p>
+    </footer>
+</body>
+</html>

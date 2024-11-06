@@ -1,0 +1,140 @@
+/* Reset básico e configurações globais */
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o padding padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do corpo da página */
+    line-height: 1.6; /* Define o espaçamento entre as linhas do texto */
+    color: #333; /* Cor do texto (um cinza escuro) */
+    background-color: #f4f4f4; /* Cor de fundo da página (cinza claro) */
+    margin: 0; /* Remove a margem do corpo */
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #333; /* Fundo escuro para o cabeçalho */
+    color: #fff; /* Texto branco */
+    padding: 15px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo dentro do cabeçalho */
+}
+
+header h1 {
+    font-size: 1.8em; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+header img {
+    width: 50px; /* Largura da imagem */
+    height: 50px; /* Altura da imagem */
+    border-radius: 50%; /* Deixa a imagem redonda */
+}
+
+/* Navegação */
+nav {
+    background-color: #222; /* Fundo mais escuro para a navegação */
+    padding: 10px 0; /* Espaçamento interno superior e inferior */
+    text-align: center; /* Centraliza os links de navegação */
+}
+
+nav a {
+    color: #fff; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    padding: 10px; /* Espaçamento interno para cada link */
+    margin: 0 10px; /* Espaçamento entre os links */
+    font-size: 1.1em; /* Tamanho da fonte dos links */
+}
+
+nav a:hover {
+    background-color: #444; /* Fundo mais claro quando o link é hover */
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px; /* Espaçamento interno para o conteúdo principal */
+    background-color: #fff; /* Fundo branco para o conteúdo */
+}
+
+/* Rodapé */
+footer {
+    text-align: center; /* Centraliza o conteúdo do rodapé */
+    padding: 15px; /* Espaçamento interno */
+    background-color: #333; /* Fundo escuro para o rodapé */
+    color: #fff; /* Texto branco no rodapé */
+    position: fixed; /* Faz o rodapé ficar fixo no fundo da tela */
+    bottom: 0; /* Posiciona o rodapé no fundo da tela */
+    width: 100%; /* Faz o rodapé ocupar toda a largura da tela */
+}
+
+/* Estilos para telas pequenas (mobile-first) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em; /* Diminui o tamanho do título em telas pequenas */
+    }
+
+    header img {
+        width: 40px; /* Diminui a largura da imagem */
+        height: 40px; /* Diminui a altura da imagem */
+    }
+
+    nav a {
+        display: block; /* Coloca os links da navegação em bloco, um abaixo do outro */
+        padding: 15px; /* Aumenta o espaçamento interno dos links */
+        font-size: 1.2em; /* Aumenta o tamanho da fonte dos links */
+        margin-bottom: 10px; /* Adiciona espaçamento abaixo de cada link */
+    }
+
+    footer {
+        position: static; /* Remove a fixação do rodapé */
+        padding: 10px; /* Diminui o padding do rodapé */
+    }
+}
+
+/* Estilos para telas médias (tablets e dispositivos com largura entre 600px e 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 2em; /* Aumenta o tamanho do título em telas médias */
+    }
+
+    header img {
+        width: 60px; /* Aumenta a largura da imagem */
+        height: 60px; /* Aumenta a altura da imagem */
+    }
+
+    nav a {
+        padding: 12px 20px; /* Ajusta o padding dos links */
+    }
+
+    footer {
+        position: static; /* Remove a fixação do rodapé em telas médias */
+    }
+}
+
+/* Estilos para telas grandes (desktops) */
+@media (min-width: 1025px) {
+    header h1 {
+        font-size: 2.5em; /* Aumenta o tamanho do título em telas grandes */
+    }
+
+    header img {
+        width: 80px; /* Aumenta a largura da imagem */
+        height: 80px; /* Aumenta a altura da imagem */
+    }
+
+    nav a {
+        font-size: 1.3em; /* Aumenta o tamanho da fonte dos links */
+        padding: 12px 20px; /* Ajusta o padding dos links */
+    }
+
+    main {
+        max-width: 960px; /* Limita a largura do conteúdo principal em telas grandes */
+        margin: 0 auto; /* Centraliza o conteúdo na tela */
+    }
+
+    footer {
+        position: static; /* Remove a fixação do rodapé em telas grandes */
+        padding: 20px; /* Aumenta o padding do rodapé */
+    }
+}
